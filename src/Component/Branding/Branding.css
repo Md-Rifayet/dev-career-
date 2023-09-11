@@ -1,0 +1,40 @@
+.brandContainer{
+    display: flex;
+    margin-top: 40px;
+    background-color: rgb(240, 247, 244);
+}
+.brandMessage{
+    margin-top: 45px;
+    width: 55%;
+    text-align: left;
+}
+.brandMessage h2{
+    margin-left: 20%;
+    font-size: 70px;
+}
+.dreamJob{
+    color:  rgb(42, 223, 162);
+}
+.brandMessage p{
+   
+    margin-left: 20%;
+    margin-top: -40px;
+    width: 500px;
+    color:rgb(94, 69, 69);
+    font-size: 20px;
+}
+.button{
+    width: 160px;
+    padding: 13px;
+    background-color: rgb(136, 240, 205);
+    border: 1px solid rgb(240, 204, 204);
+    border-radius: 5px;
+    border: 2px solid ;
+    margin-left: 20%;   
+   
+}
+
+.img img{
+    width: 600px;
+}
+

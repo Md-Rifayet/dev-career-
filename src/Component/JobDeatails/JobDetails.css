@@ -1,0 +1,50 @@
+.header-title{
+height: 250px;
+display: flex;
+justify-content: center; 
+align-items: center; 
+}
+
+
+.jobDescription p{
+    color: rgb(105, 104, 103);
+    width: 865px;
+    text-align: justify;
+}
+.para-head{
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+.jobDetailsContainer{
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    margin: 40px 150px 150px;
+}
+
+.jobDetails{
+    background-color:rgb(235, 247, 243) ;
+    padding: 20px;
+    width: 300px;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+.jobDetails h2{
+   border-bottom: 2px solid rgb(235, 229, 229);
+   height: 40px;
+}
+
+.apply-btn{
+    width: 350px;
+  margin: 8px;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: rgb(231, 224, 224);
+  background-color: rgb(86, 157, 167);
+}

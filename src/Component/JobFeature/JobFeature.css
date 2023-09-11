@@ -1,0 +1,45 @@
+.job-details-container{
+    margin-left: 60px;
+    line-height: 5px;
+    padding: 30px;
+    width: 550px;
+    background-color: rgb(241, 243, 243);
+    border: 2px solid  rgb(226, 245, 245);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    box-shadow: 30ch;
+}
+
+.job-details-container h5{
+    color: rgb(134, 192, 243);
+}
+
+.job-type-btn{
+    padding: 9px 16px;
+    border: 1px solid rgb(162, 226, 226);
+    color:  rgb(19, 138, 138);
+    font-size: 14px;
+   font-weight: bold;
+   margin: 0px 8px 20px 0;
+   
+   
+}
+
+.loc-salary p{
+    display: inline;
+    color: rgb(121, 115, 108);
+    margin: 20px  20px 0 0;
+    width: auto;
+}
+
+.view-details-btn{
+    margin-top: 25px;
+    width: 100px;
+    padding: 12px;
+    background-color: rgb(195, 238, 224);
+    border: 1px solid rgb(245, 219, 219);
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    
+}

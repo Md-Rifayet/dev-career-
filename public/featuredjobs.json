@@ -1,0 +1,50 @@
+[
+    {
+        "id": "j1",
+        "name": "Technical Database Engineer",
+        "title":"Google LLC",
+        "company": "Google",
+        "type1":"Remote",
+        "type2":"Full Time",
+        "availableJob": 20,
+        "location":"Dhaka, Bangladesh",
+        "salary":"Salary : 100K - 150K",
+        "photo" :"google-1-1 1.png"
+    },
+    {
+        "id": "j2",
+        "name": "Senior Product Designer",
+        "title":"Netflix",
+        "company": "SpaceX",
+        "type1":"Remote",
+        "type2":"Full Time",
+        "availableJob": 40,
+        "location":"Dhaka, Bangladesh",
+        "salary":"Salary : 100K - 150K",
+        "photo" :"Group 10021.png"
+    },
+    {
+        "id": "j3",
+        "name": "Software Engineer",
+        "title":"Tesla",
+        "company": "Company XYZ",
+        "type1":"Onsite",
+        "type2":"Full Time",
+        "availableJob": 30,
+        "location":"Dhaka, Bangladesh",
+        "salary":"Salary : 100K - 150K",
+        "photo" :"netflix-4 1.png"
+    },
+    {
+        "id": "j4",
+        "name": "Technical Database Engineer",
+        "title":"Google LLC",
+        "company": "Google",
+        "type1":"Remote",
+        "type2":"Full Time",
+        "availableJob": 20,
+        "location":"Dhaka, Bangladesh",
+        "salary":"Salary : 100K - 150K",
+        "photo" :"tesla-9 1.png"
+    }
+]

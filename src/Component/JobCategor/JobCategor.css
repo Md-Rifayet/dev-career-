@@ -1,0 +1,10 @@
+.job-container{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.job-container-header{
+    text-align: center;
+    margin: 70px 10px 10px 10px;
+}

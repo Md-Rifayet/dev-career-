@@ -1,0 +1,10 @@
+.job-details{
+    margin: 20px 30px 30px 50px;
+    width: 200px;
+    padding: 30px;
+    background-color: rgb(240, 247, 244);
+}
+.job-details h2{
+    font-weight: 30px;
+    font-size: 20px;
+}

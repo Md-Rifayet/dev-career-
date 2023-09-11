@@ -1,0 +1,26 @@
+[
+    {
+        "id": "1",
+        "name": "Web Developer",
+        "company": "Google",
+        "availableJob": 20
+    },
+    {
+        "id": "2",
+        "name": "Market Researcher",
+        "company": "SpaceX",
+        "availableJob": 40
+    },
+    {
+        "id": "3",
+        "name": "Cyber Security Expert",
+        "company": "Company XYZ",
+        "availableJob": 30
+    },
+    {
+        "id": "4",
+        "name": "Database Engineer",
+        "company": "Google",
+        "availableJob": 20
+    }
+]
