@@ -13,6 +13,7 @@ import JobDetails from './Component/JobDeatails/JobDetails';
 import AppliedJob from './Component/Applied Job/AppliedJob';
 import jobLoader from './Loader/jobLoader';
 import Statistic from './Component/Statistic/Statistic';
+import Blog from './Component/Blog/Blog';
 
 
 const router = createBrowserRouter([
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
         path:"appliedjob",
         element: <AppliedJob></AppliedJob>,
         loader: jobLoader
+      },
+      {
+        path:"blog",
+        element: <Blog></Blog>,
       }
     ]
   },

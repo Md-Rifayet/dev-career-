@@ -1,0 +1,10 @@
+.blog-container{
+    width: 80%;
+   margin: auto;
+   margin-top: 80px;
+}
+.blog-div{
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(247, 247, 247);
+}
