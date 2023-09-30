@@ -1,0 +1,41 @@
+.jobs{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+ 
+}
+.appliedJob-Style{
+    margin: 0 20px;
+    width: 75%;
+    border: 2px solid rgb(245, 239, 239);
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+   
+}
+
+.appliedJob-Style img{
+    width: 100px;
+    height: 60px;
+    background-color: rgb(226, 227, 228);
+    padding: 40px 30px;
+    border-radius: 5px;
+   
+}
+.appliedJob-Style a{
+    margin: auto;
+   
+}
+.appliedJob-cart-info {
+   line-height: 5px;
+}
+
+.appliedJob-cart-info button{
+    padding: 7px 13px;
+    border: 1px solid rgb(162, 226, 226);
+    color:  rgb(19, 138, 138);
+    font-size: 14px;
+    margin: 0px 8px 0px 0;
+}
+
+

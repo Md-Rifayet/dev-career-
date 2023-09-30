@@ -20,7 +20,7 @@ const JobFeature = ({fetjob}) => {
         <p><FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon> {fetjob.location}</p>
         <p><FontAwesomeIcon icon={faUsd}></FontAwesomeIcon> {fetjob.salary}</p>
        </div>
-       <Link to={`/jobDetails/${fetjob.id}`} state={{ fetjob }}>
+       <Link to={`/jobDetails/${fetjob.id}`} state={{ fetjob: fetjob}}>
         <button className='view-details-btn'> View Details</button>
       </Link>
     </div>

@@ -1,17 +1,53 @@
 // JobDetails.jsx
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faUsd, faLocationDot, faPhone, faMessage, faCalendar, faCalendarAlt } from '@fortawesome/free-solid-svg-icons'
 import { useLocation } from 'react-router-dom';
 import "./JobDetails.css"
+import { addToDb, getShoppingCart } from '../../utilities/fakedb';
 
 const JobDetails = () => {
   const location = useLocation();
   const { fetjob } = location.state || {}; // Access the passed data
 
-  if (!fetjob) {
-    // Handle the case where no data is available
-    return <div>No data available.</div>;
+  if (!fetjob || !fetjob.name) {
+    return <div>No job details available</div>;
+  }
+
+  const [jobsAre,  setJobsAre] = useState([])
+  const [jobApplied, setJobApplied] = useState([]);
+
+
+  useEffect(() =>{
+    fetch('/featuredjobs.json')
+    .then(res => res.json())
+    .then(data => setJobsAre(data))
+  },[])
+
+  useEffect(() =>{
+    const storedJob = getShoppingCart();
+
+    let savedJob = []
+
+    for(const id in storedJob){
+
+      const storedJobID  = jobsAre.find(job => job.id === id)
+
+      console.log(storedJobID)
+
+        if(storedJobID){
+          const setappliedTime = storedJob[id];
+          storedJobID.appliedTime = setappliedTime
+          savedJob.push(storedJobID)
+
+        }
+    }
+  },[jobsAre])
+
+  const handelAppliedJob = (fetjob) =>{
+    const addedJobs =  [...jobApplied, fetjob]
+    setJobApplied(addedJobs)
+    addToDb(fetjob.id)
   }
 
   return (
@@ -33,12 +69,13 @@ const JobDetails = () => {
   <p><span className='para-head'>Experiences: </span></p>
   <p>2-3 Years in this field.</p>
 </div>
+
 {/* Job Details start */}
 <div>
 <div className='jobDetails'>
 <h2>Job Details</h2>
 <p><FontAwesomeIcon icon={faUsd}></FontAwesomeIcon> <span className='para-head'>Salary :</span> 100k-150k(Per Month)</p>
-<p><FontAwesomeIcon icon={faCalendarAlt}></FontAwesomeIcon> <span className='para-head'>Job Title :</span> Product Designer</p>
+<p><FontAwesomeIcon icon={faCalendarAlt}></FontAwesomeIcon> <span className='para-head'>Job Title :</span> {fetjob.name}</p>
 
 <h2>Contact Information</h2>
 <p><FontAwesomeIcon icon={faPhone}></FontAwesomeIcon> <span className='para-head'>Phone :</span> 01750-00 00 00</p>
@@ -46,7 +83,7 @@ const JobDetails = () => {
 <p><FontAwesomeIcon icon={faLocationDot}></FontAwesomeIcon> <span className='para-head'>Address :</span>  Dhanmondi 32, Sukrabad
 Dhaka, Bangladesh</p>
 </div>
-<button className='apply-btn'>Apply Now</button>
+<button onClick={() =>{handelAppliedJob(fetjob)}} className='apply-btn'>Apply Now</button>
 </div>
 {/* Job Details End */}
 

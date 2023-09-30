@@ -1,15 +1,16 @@
 [
     {
         "id": "j1",
-        "name": "Technical Database Engineer",
-        "title":"Google LLC",
-        "company": "Google",
+        "name": "Software Engineer",
+        "title":"Apple",
+        "company": "Apple",
         "type1":"Remote",
         "type2":"Full Time",
         "availableJob": 20,
         "location":"Dhaka, Bangladesh",
         "salary":"Salary : 100K - 150K",
-        "photo" :"google-1-1 1.png"
+        "appliedTime":"0",
+        "photo" :"apple.png"
     },
     {
         "id": "j2",
@@ -21,6 +22,7 @@
         "availableJob": 40,
         "location":"Dhaka, Bangladesh",
         "salary":"Salary : 100K - 150K",
+        "appliedTime":"0",
         "photo" :"Group 10021.png"
     },
     {
@@ -33,6 +35,7 @@
         "availableJob": 30,
         "location":"Dhaka, Bangladesh",
         "salary":"Salary : 100K - 150K",
+        "appliedTime":"0",
         "photo" :"netflix-4 1.png"
     },
     {
@@ -45,6 +48,33 @@
         "availableJob": 20,
         "location":"Dhaka, Bangladesh",
         "salary":"Salary : 100K - 150K",
+        "appliedTime":"0",
         "photo" :"tesla-9 1.png"
+    },
+    {
+        "id": "j5",
+        "name": "cybersecurity admin expert",
+        "title":"Microsift",
+        "company": "Microsift",
+        "type1":"Remote",
+        "type2":"Full Time",
+        "availableJob": 20,
+        "location":"Dhaka, Bangladesh",
+        "salary":"Salary : 100K - 150K",
+        "appliedTime":"0",
+        "photo" :"microsoft.png"
+    },
+    {
+        "id": "j6",
+        "name": "Technical Database Engineer",
+        "title":"Google LLC",
+        "company": "Google",
+        "type1":"Onsite",
+        "type2":"Full Time",
+        "availableJob": 20,
+        "location":"Dhaka, Bangladesh",
+        "salary":"Salary : 100K - 150K",
+        "appliedTime":"0",
+        "photo" :"google-1-1 1.png"
     }
 ]

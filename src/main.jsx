@@ -7,12 +7,12 @@ import {
 } from "react-router-dom";
 
 import Home from './Component/Home/Home.jsx';
-import Stat from './Stat/Stat.jsx';
+
 import Main from './Component/Main/Main.jsx';
 import JobDetails from './Component/JobDeatails/JobDetails';
 import AppliedJob from './Component/Applied Job/AppliedJob';
-
-
+import jobLoader from './Loader/jobLoader';
+import Statistic from './Component/Statistic/Statistic';
 
 
 const router = createBrowserRouter([
@@ -27,7 +27,7 @@ const router = createBrowserRouter([
       },
       {
         path:'statistics',
-        element: <Stat></Stat>
+        element: <Statistic></Statistic>
       },
       {
         path:"jobDetails/:id",
@@ -36,7 +36,8 @@ const router = createBrowserRouter([
       },
       {
         path:"appliedjob",
-        element: <AppliedJob></AppliedJob>
+        element: <AppliedJob></AppliedJob>,
+        loader: jobLoader
       }
     ]
   },

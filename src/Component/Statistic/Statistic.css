@@ -1,0 +1,10 @@
+.chartParentDiv {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .chartContainer {
+    margin-right: 100px; /* Adjust as needed to add space between charts */
+  }
+  
