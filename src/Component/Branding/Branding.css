@@ -1,40 +1,71 @@
-.brandContainer{
+.brandContainer {
     display: flex;
+    flex-direction: column;
     margin-top: 40px;
     background-color: rgb(240, 247, 244);
-}
-.brandMessage{
-    margin-top: 45px;
-    width: 55%;
-    text-align: left;
-}
-.brandMessage h2{
-    margin-left: 20%;
-    font-size: 70px;
-}
-.dreamJob{
-    color:  rgb(42, 223, 162);
-}
-.brandMessage p{
    
-    margin-left: 20%;
-    margin-top: -40px;
-    width: 500px;
-    color:rgb(94, 69, 69);
-    font-size: 20px;
-}
-.button{
+  }
+  
+  .brandMessage {
+    width: 100%;
+    text-align: center;
+    
+  }
+  
+  .brandMessage h2 {
+    font-size: 3em;
+   
+  }
+  
+  .dreamJob {
+    color: rgb(42, 223, 162);
+  }
+  
+  .brandMessage p {
+    margin-top: 10px; 
+    width: 100%;
+    color: rgb(94, 69, 69);
+    font-size: 1.2em;
+  }
+  
+  .button {
     width: 160px;
     padding: 13px;
     background-color: rgb(136, 240, 205);
     border: 1px solid rgb(240, 204, 204);
     border-radius: 5px;
-    border: 2px solid ;
-    margin-left: 20%;   
-   
-}
-
-.img img{
-    width: 600px;
-}
-
+    border: 2px solid;
+    margin: 20px auto; 
+  }
+  
+  .img img {
+    width: 100%; 
+    max-width: 600px; 
+    margin-top: 20px; 
+  }
+  
+  /* Media Query for Tablets and Desktops */
+  @media only screen and (min-width: 400px) {
+    .brandContainer {
+      flex-direction: row;
+      padding: 60px 90px;
+    }
+  
+    .brandMessage {
+      width: 50%;
+      text-align: left;
+      margin-top: 0;
+    }
+  
+    .img img {
+      margin-top: 0;
+    }
+  }
+  
+  /* Media Query for Desktops */
+  @media only screen and (min-width: 900px) {
+    .brandMessage {
+      width: 60%;
+    }
+  }
+  
